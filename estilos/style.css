@@ -1,0 +1,17 @@
+/* Navbar */
+.navbar {
+  padding: 2rem;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-mi {
+  background-color: beige;
+}
+/* Funcion para ocultar el fav-icon en pantallas  con max-width < Valor en(px) */
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    display: none;
+  }
+}
