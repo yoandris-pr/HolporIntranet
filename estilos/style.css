@@ -7,11 +7,52 @@
   justify-content: space-between;
 }
 .navbar-mi {
-  background-color: beige;
+  background-color: white;
+}
+/* Reglas generales */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Rubik Dirt", cursive;
+}
+
+/* Seccion principal o hero llamadas comunmente */
+.sec-presentation {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+.presentation-cont-img {
+  width: 100px;
+  height: 100px;
+  /* padding-top: 0.5rem; */
+  margin: 20px;
+}
+.presentation-cont {
+  padding: 3rem;
+}
+
+.presentation-cont h2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+.sec-presentation-inf-img {
+  width: 70%;
+  height: 400px;
 }
 /* Funcion para ocultar el fav-icon en pantallas  con max-width < Valor en(px) */
 @media screen and (max-width: 576px) {
   .navbar-brand {
     display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .sec-presentation-inf-img {
+    max-width: 600px;
   }
 }
