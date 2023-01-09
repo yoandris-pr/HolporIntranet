@@ -183,6 +183,9 @@ h1 {
 .articulos .card-header {
   font-weight: bolder;
 }
+.list-group a {
+  text-decoration: none;
+}
 /* testimonios */
 .testimonios {
   padding: 40px 40px 80px 40px;
@@ -227,6 +230,65 @@ h1 {
   font-size: 0.9rem;
   color: #656060;
 }
+/* Contacto */
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina  */
+footer {
+  min-height: 500px;
+}
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
 
 /* Funcion para ocultar el fav-icon en pantallas  con max-width < Valor en(px) */
 @media screen and (max-width: 576px) {
@@ -245,5 +307,14 @@ h1 {
   }
   .overlay i {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+  .testimonio-texto {
+    font-size: 18px;
   }
 }
