@@ -32,7 +32,7 @@
     <title>Holpor | Empresa Porcina Holguin | Frontend</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -53,15 +53,21 @@
             class="navbar-nav d-flex justify-content-center align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#about-me"
                 >Sobre Nosotros</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="#proyectos">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonio">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articulos">Artículos</a>
             </li>
           </ul>
         </div>
@@ -90,7 +96,7 @@
       </div>
     </section>
     <!-- About me -->
-    <section class="about-me seccion-oscura">
+    <section id="about-me" class="about-me seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Holpor</h2>
         <p class="seccion-texto">
@@ -102,7 +108,7 @@
       </div>
     </section>
     <!-- Seccion Experiencia laboral -->
-    <section class="experiencia seccion-clara">
+    <section id="exp-laboral" class="experiencia seccion-clara">
       <div class="container text-center">
         <div class="row">
           <div class="columna col-12 col-sm-4">
@@ -153,7 +159,7 @@
       </div>
     </section>
     <!-- Proyectos -->
-    <section class="proyectos-recientes seccion-clara d-flex flex-column">
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
       <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
       <h3 class="seccion-descripcion">
         Estos son algunos proyectos que he creado recientemente..
@@ -233,7 +239,7 @@
       </a>
     </section>
     <!-- Articulos -->
-    <section class="articulos justify-content-start">
+    <section id="articulos" class="articulos justify-content-start">
       <h2 class="seccion-titulo texto-negro">Artículos</h2>
       <div class="card">
         <div class="card-header">Más recientes</div>
@@ -268,7 +274,7 @@
       </a>
     </section>
     <!-- Testimonios adding carousel component -->
-    <section class="testimonios seccion-clara">
+    <section id="testimonios" class="testimonios seccion-clara">
       <h2 class="seccion-titulo">Testimonios</h2>
       <h3 class="seccion-descripcion">
         Estos son algunos testimonios de clientes
@@ -353,7 +359,7 @@
       </div>
     </section>
     <!-- Contactos -->
-    <section class="contacto seccion-oscura">
+    <section id="contacto" class="contacto seccion-oscura">
       <div class="container">
         <div
           class="container text-center d-flex justify-content-evenly rectangulo"
@@ -379,7 +385,9 @@
     <footer
       class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
     >
+    <a href="#navbar">
       <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo de Portfolio" />
+    </a>
       <p class="footer-texto text-center"> Aprendo y creo todos los dias.</br>Creemos un proyecto juntos!!!!!</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
         <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
@@ -391,8 +399,8 @@
         <a href="http://github.com" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-github"></i>
         </a>
-
       </div>
+      <div class="derechos-de-autor">Creado por Yoandris(2023) &#169;</div>
     </footer>
     <!-- Bootstrap propone agregar su js antes del cierre de la etiqueta body (/body) -->
     <script
